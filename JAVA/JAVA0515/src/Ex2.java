@@ -1,0 +1,35 @@
+
+public class Ex2 {
+	public static void main(String[] args) {
+		/*
+		 * 중첩 while문 - 중첩 for문과 마찬가지로 while문 내부에 또 다른 반복을 수행하는 while문을 기술
+		 * 
+		 * < 기본 문법 > 초기식1;
+		 * 
+		 * while(조건식) {
+		 * 
+		 * 초기식2
+		 * 
+		 * while(조건식2){ 증감식2 }
+		 * 
+		 * 증감식1
+		 */
+
+		int i = 1; // 초기식1
+
+		while (i <= 2) { // 조건식1
+
+			int j = 1; // 초기식2
+
+			while (j <= 3) { // 조건식2
+
+				System.out.println("i = " + i + ", j = " + j);
+				j++; // 증감식2
+
+			}
+
+			i++; // 증감식1
+
+		}
+	}
+}
